@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+
+    ---c1 : hsla(0, 6%, 57%, 1);
+    ---c2 : rgb(63, 161, 207);
+    ---c3 : rgb(0, 132, 255);
+    ---c4 : white;
+    ---c6 : rgba(0, 132, 255, 0.632);
+    ---c7 : rgba(0, 132, 255, 0.867);
+    
+}
