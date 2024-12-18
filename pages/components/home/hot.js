@@ -14,7 +14,8 @@ const Hot = ()=>{
         </div>
 
         <div className="xsm:flex xsm:flex-row xsm:mt-[rem] xsm:text-[0.9rem] xsm:rounded-tr-[10px] xsm:rounded-bl-[10px] xsm:p-1 xsm:relative left-[86px] top-[-150px] bg-[---c9] w-[4rem]">
-            <div className="xsm:w-[4rem]"><p className="xsm:text-[6px] xsm:text-[---c4]">offer ends in <h2 className="xsm:text-[8px] xsm:text-[---c8] xsm:flex">12H: 30M: 40S</h2>
+            <div className="xsm:w-[4rem]">
+                 <p className="xsm:text-[6px] xsm:text-[---c4]">offer ends in <h2 className="xsm:text-[8px] xsm:text-[---c8] xsm:flex">12H: 30M: 40S</h2>
              </p>
         </div>
        

@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="xsm:flex">
+      <div className="xsm:flex xsm:sticky xsm:z-10">
         <div className="py-2 pl-2 grid grid-cols-2 ">
           <div
             onClick={onepress}
@@ -30,8 +30,8 @@ const Navbar = () => {
           <div
             className={
               show
-                ? "xsm:bg-[---c5] xsm:grid xsm:grid-cols-1 xsm:left-0  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[90vh] xsm:w-auto  xsm:fixed xsm:duration-[2s]"
-                : "xsm:bg-[---c5] xsm:grid xsm:grid-cols-1 xsm:left-[-7rem]  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[90vh] xsm:w-auto  xsm:fixed xsm:duration-[2s]"
+                ? "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-0  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[90vh] xsm:w-auto  xsm:fixed xsm:duration-[2s] "
+                : "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-[-7rem]  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[90vh] xsm:w-auto  xsm:fixed xsm:duration-[2s]"
             }
           >
             <div></div>
