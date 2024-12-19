@@ -25,7 +25,7 @@ const Navbar = () => {
             className="xsm:h-[4em] xsm:w-[3rem] xsm:rounded-[2rem] xsm:cursor-pointer  "
           >
             <Logo />
-            <p className="xsm:text-[15px] xsm:mt-[-7px]">Games</p>
+            <span className="xsm:text-[15px] xsm:mt-[-7px]">Games</span>
           </div>
           <div
             className={
@@ -70,7 +70,7 @@ const Navbar = () => {
 
             <div className=" xsm:cursor-pointer  xsm:h-[40px] w-[7rem] xsm:items-center   xsm:w-[30px] xsm:rounded-[2rem] my-2 xsm:flex ">
               <Logo />
-              <p className="ml-[0.4rem] mt-[0.5rem]">Abubakar </p>
+              <span className="ml-[0.4rem] mt-[0.5rem]">Abubakar </span>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
           <div>
             <button className=" xsm:hover:bg-[---c7] xsm:active:bg-[---c6] xsm:items-center xsm:flex xsm:text-[10px] xsm:bg-[---c3] xsm:w-[8rem] xsm:rounded-[2rem]  ">
               <IoWalletSharp className="text-[---c4] w-[1.8rem] h-[1rem] m-2" />
-              <p className="text-[---c4]">Connect Wallet</p>
+              <span className="text-[---c4]">Connect Wallet</span>
             </button>
           </div>
         </div>

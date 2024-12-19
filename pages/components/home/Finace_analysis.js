@@ -12,7 +12,7 @@ const Finance = () => {
     <>
       <div className="main xsm:h-[10rem] xsm:bg-[---c11] xsm:pl-2 xsm:pt-1 xsm:pb- xsm:rounded-[20px] xsm:flex xsm:flex-col xsm:m-2  ">
         <div className="xsm:flex xsm:m-2 xsm:px-3 xsm:border-b-1 xsm:border-[---c5] h-[2rem] w-[23rem]">
-          <p className="xsm:text-[---c12]">Your Finance</p>
+          <span className="xsm:text-[---c12]">Your Finance</span>
           <BiDotsHorizontalRounded className="xsm:text-[---c4] xsm:text-[1rem]  xsm:absolute xsm:right-8 xsm:mt-2 " />
         </div>
         <hr className="w-[19rem] place-self-center mx-auto" />
