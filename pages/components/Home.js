@@ -1,13 +1,17 @@
 import React from "react";
 import Hot from "./home/hot";
 import Finance from "./home/Finace_analysis";
-import Featured from "./home/Featured_creators";
+import OldGames from "./home/Old _games";
+import NewGames from "./home/New_games";
+import AllGames from "./home/All_Games";
 
 const HomePage = ()=>{
     return(<>
-    <Hot/>
-    <Finance/>
-    <Featured/>
+        <Hot/>
+        <Finance/>
+        <NewGames/>
+        <OldGames/>
+        <AllGames/>
     </>)
 }
 
