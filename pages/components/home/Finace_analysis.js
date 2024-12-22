@@ -128,7 +128,7 @@ const Finance = () => {
             </div>
           </div>
           <div>
-            <div className="xsm:text-[---c4] xsm:w-[15rem] xsm:bg-[---c9] xsm:ml-[2.5rem] xsm:right-12 xsm:mt-3 xsm:h-[8rem] xsm:text-center xsm:rounded-lg">Total Balance : $100</div>
+            <div className="xsm:text-[---c4] xsm:w-[15rem] xsm:bg-[---c9] xsm:ml-[2.5rem] xsm:right-12 xsm:mt-3 xsm:h-[8rem] xsm:text-center xsm:rounded-lg xsm:place-content-center">Total Balance : $100</div>
             <button className="xsm:text-[---c4] xsm:w-[15rem] xsm:bg-[---c3] xsm:rounded-[2rem] xsm:mt-2 xsm:absolute xsm:right-12 xsm:h-[2rem]">Top Up Balance</button>
           </div>
         </div>

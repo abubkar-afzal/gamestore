@@ -5,21 +5,21 @@ import HotGame from "./images/cdwm3.jpg"
 const Hot = ()=>{
     return(<>
     <div className="main xsm:h-[10rem] xsm:bg-[---c4] xsm:pl-2 xsm:pt-1 xsm:pb- xsm:rounded-[20px] xsm:flex ">
-        <div className="">
+        <div className="xsm:relative">
         <Image src={HotGame} width={150} height={150} className="xsm:rounded-[10px] xsm:static"/>
-        <div className="xsm:flex xsm:flex-row xsm:mt-[-3rem] xsm:rounded-[10px] xsm:p-3 xsm:pr-2 xsm:absolute xsm:bg-[---c9]  xsm:h-[3rem]">
-            <div className=""><p className="xsm:text-[8px] xsm:text-[---c4]">Current Price <h2 className="xsm:text-[10px] xsm:text-[---c8] xsm:flex">500.00 Rs<p className="xsm:text-[---c4] xsm:text-[8px] xsm:align-baseline mt-auto xsm:pl-2">  ($1.8)</p></h2></p>
-        </div>
-        <button className="xsm:px-1 xsm:ml-3 xsm:bg-[---c8] xsm:text-[8px] xsm:rounded-[4rem] ">Buy Now &#8919;  </button>
-        </div>
-
-        <div className="xsm:flex xsm:flex-row xsm:mt-[rem] xsm:text-[0.9rem] xsm:rounded-tr-[10px] xsm:rounded-bl-[10px] xsm:p-1 xsm:relative left-[86px] top-[-150px] bg-[---c9] w-[4rem]">
+        <div className="xsm:flex xsm:flex-row xsm:mt-[rem] xsm:text-[0.9rem] xsm:rounded-tr-[10px] xsm:rounded-bl-[10px] xsm:p-1 xsm:absolute xsm:top-0 xsm:right-0 bg-[---c9] w-[4rem]">
             <div className="xsm:w-[4rem]">
-                 <p className="xsm:text-[6px] xsm:text-[---c4]">offer ends in <h2 className="xsm:text-[8px] xsm:text-[---c8] xsm:flex">12H: 30M: 40S</h2>
-             </p>
+                 <p className="xsm:text-[6px] xsm:text-[---c4]">offer ends in </p> <h2 className="xsm:text-[8px] xsm:text-[---c8] xsm:flex">12H: 30M: 40S</h2>
+            
         </div>
        
         </div>
+        <div className="xsm:flex xsm:flex-row xsm:mt-[-3rem] xsm:rounded-[10px] xsm:p-3 xsm:pr-4 xsm:absolute xsm:bg-[---c9]  xsm:h-[3rem] xsm:w-[100%] ">
+            <div className=""><p className="xsm:text-[6px] xsm:text-[---c4]">Current Price</p> <h2 className="xsm:text-[8px] xsm:text-[---c8] xsm:flex">500.00 Rs<p className="xsm:text-[---c4] xsm:text-[8px] xsm:align-baseline mt-auto xsm:pl-2">  ($1.8)</p></h2>
+        </div>
+        <button className="xsm:px-[6px] xsm:ml-auto xsm:bg-[---c8] xsm:text-[6px] xsm:rounded-[4rem] ">Buy Now &#8919;  </button>
+        </div>
+
         </div>
         <div>
             <div className="xsm:bg-[---c10] xsm:flex  xsm:m-2 xsm:ml-[22px]  xsm:text-[8px] xsm:rounded-[2rem] xsm:w-[10rem] xsm:h-[22px] xsm:pt-[1px]">

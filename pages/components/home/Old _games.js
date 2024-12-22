@@ -6,7 +6,7 @@ import Image from "next/image";
 
 
 const OldGames =()=>{
-    return(<>   <div className="main xsm:h-[19rem] xsm:bg-[---c4] xsm:pl-2 xsm:pt-1 xsm:my-2 xsm:rounded-[20px] xsm:flex xsm:flex-col ">
+    return(<>   <div className="main xsm:h-[19rem] xsm:bg-[---c4] xsm:px-2 xsm:pt-1 xsm:my-2 xsm:rounded-[20px] xsm:flex xsm:flex-col ">
             <div className=" xsm:p-2"><span className="xsm:font-bold mr-[12rem]">Old Games</span><span className="xsm:text-[---c9] xsm:text-[12px] cursor-pointer">See All &#8919; </span>
             </div>
             <hr className="w-[19rem] place-self-center mx-auto" />

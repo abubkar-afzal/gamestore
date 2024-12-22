@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="xsm:flex xsm:sticky xsm:z-10">
+      <div className="xsm:flex xsm:fixed  xsm:z-10">
         <div className="py-2 pl-2 grid grid-cols-2 ">
           <div
             onClick={onepress}
@@ -30,8 +30,8 @@ const Navbar = () => {
           <div
             className={
               show
-                ? "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-0  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[90vh] xsm:w-auto  xsm:fixed xsm:duration-[2s] "
-                : "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-[-7rem]  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[90vh] xsm:w-auto  xsm:fixed xsm:duration-[2s]"
+                ? "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-0  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[95vh] xsm:w-auto  xsm:fixed xsm:duration-[2s] "
+                : "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-[-7rem]  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[95vh] xsm:w-auto  xsm:fixed xsm:duration-[2s]"
             }
           >
             <div></div>
@@ -80,7 +80,7 @@ const Navbar = () => {
             <CiSearch className="xsm:cursor-pointer xsm:w-[2rem] xsm:h-[1.5rem] xsm:place-self-start " />
             <input
               type="text"
-              className=" xsm:w-[3rem] xsm:h-[1rem] xsm:place-self-between"
+              className=" xsm:w-[3rem] xsm:h-[1rem] xsm:place-self-between bg-transparent"
               name="search"
               id="search"
               placeholder="search"
@@ -95,6 +95,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <div className="h-[5rem] w-[100%]"></div>
     </>
   );
 };

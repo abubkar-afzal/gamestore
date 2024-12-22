@@ -11,7 +11,7 @@ const AllGames = () => {
   return (
     <>
       {" "}
-      <div className="main xsm:h-[19rem] xsm:bg-[---c4] xsm:pl-2 xsm:pt-1 xsm:my-2 xsm:rounded-[20px] xsm:flex xsm:flex-col  ">
+      <div className="main xsm:h-[19rem] xsm:bg-[---c4] xsm:px-2 xsm:pt-1 xsm:my-2 xsm:rounded-[20px] xsm:flex xsm:flex-col pb-[1rem] ">
         <div className=" xsm:p-2">
           <span className="xsm:font-bold mr-[12rem]">All Games</span>
           <span className="xsm:text-[---c9] xsm:text-[12px] cursor-pointer">
@@ -19,7 +19,7 @@ const AllGames = () => {
           </span>
         </div>
         <hr className="w-[19rem] place-self-center mx-auto" />
-        <div className=" xsm:mt-[1rem] xsm:flex xsm:flex-wrap xsm:space-x-[1.5rem] xsm:space-y-[1rem] xsm:overflow-y-scroll xsm:h-[15rem]">
+        <div className=" xsm:mt-[1rem] xsm:flex xsm:flex-wrap xsm:space-x-[1.2rem] xsm:space-y-[1rem] xsm:overflow-y-scroll xsm:h-[15rem]">
             <div></div>
           <div className="h-[200px] w-[150px] xsm:shadow-md xsm:shadow-black xsm:cursor-pointer xsm:text-center">
             <Image
@@ -106,6 +106,6 @@ const AllGames = () => {
         </div>
       </div>
     </>
-  );
+  )
 };
 export default AllGames;

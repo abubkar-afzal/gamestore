@@ -7,11 +7,13 @@ import AllGames from "./home/All_Games";
 
 const HomePage = ()=>{
     return(<>
+        <div className="mx-auto">
         <Hot/>
         <Finance/>
         <NewGames/>
         <OldGames/>
         <AllGames/>
+        </div>
     </>)
 }
 
