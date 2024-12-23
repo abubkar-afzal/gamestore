@@ -9,12 +9,38 @@ import { CiSearch } from "react-icons/ci";
 import { TbAdjustmentsHorizontal } from "react-icons/tb";
 import { IoWalletSharp } from "react-icons/io5";
 import Logo from "./logo";
+import Link from "next/link";
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [show, hide] = useState(false);
   const onepress = () => {
     hide(!show);
   };
+  let home;
+  let saved;
+  let liked;
+  let cart;
+  let setting;
+  let login;
+
+
+  const router = useRouter();
+  const currentUrl = router.asPath;
+  if(currentUrl==="/"){
+    home="xsm:text-[---c4]  xsm:bg-[---c3]"
+  }else if(currentUrl==="/components/Saved"){
+    saved="xsm:text-[---c4] xsm:bg-[---c3]"
+  }else if(currentUrl==="/components/Liked"){
+    liked="xsm:text-[---c4] xsm:bg-[---c3]"
+  }else if(currentUrl==="/components/Cart"){
+    cart="xsm:text-[---c4] xsm:bg-[---c3]"
+  }else if(currentUrl==="/components/Setting"){
+    setting="xsm:text-[---c4] xsm:bg-[---c3]"
+  }else if(currentUrl==="/components/Login"){
+    login="xsm:text-[---c4] xsm:bg-[---c3]"
+  }
+
 
   return (
     <>
@@ -36,37 +62,38 @@ const Navbar = () => {
           >
             <div></div>
             <div></div>
-            <div className=" xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]               xsm:rounded-[2rem]  xsm:flex xsm:space-x-1">
-              <MdHomeFilled className="w-[2rem] h-[1.5rem] text-[---c1] xsm:active:text-[---c4] xsm:hover:text-[---c4]" />
+            
+            <Link href="http://localhost:3000"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${home}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+              <MdHomeFilled className={`w-[2rem] h-[1.5rem] text-[---c1]  ${home} `}/>
               <p>Home</p>
-            </div>
+            </div></Link>
 
-            <div className=" xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:rounded-[2rem]  xsm:flex xsm:space-x-1">
-              <TbCopyPlusFilled className="w-[2rem] h-[1.5rem] text-[---c1] xsm:active:text-[---c4] xsm:hover:text-[---c4]" />
+            <Link href="http://localhost:3000/components/Saved"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${saved}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+              <TbCopyPlusFilled className={`w-[2rem] h-[1.5rem] text-[---c1]  ${saved}`}/>
               <p>Saved</p>
-            </div>
+            </div></Link>
 
-            <div className=" xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:rounded-[2rem]  xsm:flex xsm:space-x-1">
-              <FaHeart className="w-[2rem] h-[1.5rem] text-[---c1] xsm:active:text-[---c4] xsm:hover:text-[---c4]" />
+            <Link href="http://localhost:3000/components/Liked"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${liked}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+              <FaHeart className={`w-[2rem] h-[1.5rem] text-[---c1]  ${liked}`} />
               <p>Liked</p>
-            </div>
+            </div></Link>
 
-            <div className=" xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:rounded-[2rem]  xsm:flex xsm:space-x-1">
-              <TiShoppingCart className="w-[2rem] h-[1.5rem] text-[---c1] xsm:active:text-[---c4] xsm:hover:text-[---c4]" />
-              <p>Store</p>
-            </div>
+            <Link href="http://localhost:3000/components/Cart"> <div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${cart}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+              <TiShoppingCart className={`w-[2rem] h-[1.5rem] text-[---c1]  ${cart}`} />
+              <p>Cart</p>
+            </div></Link>
 
-            <div className=" xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:rounded-[2rem]  xsm:flex xsm:space-x-1">
-              <IoSettings className="w-[2rem] h-[1.5rem] text-[---c1] xsm:active:text-[---c4] xsm:hover:text-[---c4]" />
+            <Link href="http://localhost:3000/components/Setting"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${setting}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+              <IoSettings className={`w-[2rem] h-[1.5rem] text-[---c1]  ${setting}`} />
               <p>Setting</p>
-            </div>
+            </div></Link>
 
             <div></div>
             <div></div>
-            <div className=" xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:rounded-[2rem]  xsm:flex xsm:space-x-1">
-              <BsFillPlusCircleFill className="w-[2rem] xsm:active:bg-[---c6] h-[1.5rem] text-[---c2] xsm:active:text-[---c4] xsm:hover:text-[---c4]" />
+            <Link href="http://localhost:3000/components/Login"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${login}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+              <BsFillPlusCircleFill className={`w-[2rem] xsm:active:bg-[---c6] h-[1.5rem] text-[---c2] xsm:active:text-[---c4] xsm:hover:text-[---c4] ${login}`} />
               <p>Login</p>
-            </div>
+            </div></Link>
 
             <div className=" xsm:cursor-pointer  xsm:h-[40px] w-[7rem] xsm:items-center   xsm:w-[30px] xsm:rounded-[2rem] my-2 xsm:flex ">
               <Logo />
