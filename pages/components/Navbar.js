@@ -56,48 +56,48 @@ const Navbar = () => {
           <div
             className={
               show
-                ? "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-0  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[95vh] xsm:w-auto  xsm:fixed xsm:duration-[2s] "
-                : "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-[-7rem]  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[95vh] xsm:w-auto  xsm:fixed xsm:duration-[2s]"
+                ? "NAVBAR xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-0  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[92vh] xsm:w-auto  xsm:fixed xsm:duration-[2s] "
+              : "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-[-7rem]  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[92vh] xsm:w-auto  xsm:fixed xsm:duration-[2s]"
             }
           >
             <div></div>
             <div></div>
             
-            <Link href="http://localhost:3000"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${home}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+            <Link href="http://localhost:3000"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:font-extrabold  ${home}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
               <MdHomeFilled className={`w-[2rem] h-[1.5rem] text-[---c1]  ${home} `}/>
               <p>Home</p>
             </div></Link>
 
-            <Link href="http://localhost:3000/components/Saved"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${saved}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+            <Link href="http://localhost:3000/components/Saved"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:font-extrabold  ${saved}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
               <TbCopyPlusFilled className={`w-[2rem] h-[1.5rem] text-[---c1]  ${saved}`}/>
               <p>Saved</p>
             </div></Link>
 
-            <Link href="http://localhost:3000/components/Liked"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${liked}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+            <Link href="http://localhost:3000/components/Liked"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:font-extrabold  ${liked}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
               <FaHeart className={`w-[2rem] h-[1.5rem] text-[---c1]  ${liked}`} />
               <p>Liked</p>
             </div></Link>
 
-            <Link href="http://localhost:3000/components/Cart"> <div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${cart}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+            <Link href="http://localhost:3000/components/Cart"> <div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:font-extrabold  ${cart}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
               <TiShoppingCart className={`w-[2rem] h-[1.5rem] text-[---c1]  ${cart}`} />
               <p>Cart</p>
             </div></Link>
 
-            <Link href="http://localhost:3000/components/Setting"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${setting}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+            <Link href="http://localhost:3000/components/Setting"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:font-extrabold  ${setting}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
               <IoSettings className={`w-[2rem] h-[1.5rem] text-[---c1]  ${setting}`} />
               <p>Setting</p>
             </div></Link>
 
             <div></div>
             <div></div>
-            <Link href="http://localhost:3000/components/Login"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4]  ${login}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
+            <Link href="http://localhost:3000/components/Login"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:font-extrabold  ${login}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
               <BsFillPlusCircleFill className={`w-[2rem] xsm:active:bg-[---c6] h-[1.5rem] text-[---c2] xsm:active:text-[---c4] xsm:hover:text-[---c4] ${login}`} />
               <p>Login</p>
             </div></Link>
 
             <div className=" xsm:cursor-pointer  xsm:h-[40px] w-[7rem] xsm:items-center   xsm:w-[30px] xsm:rounded-[2rem] my-2 xsm:flex ">
               <Logo />
-              <span className="ml-[0.4rem] mt-[0.5rem]">Abubakar </span>
+              <span className="ml-[0.4rem] mt-[0.5rem] font-extrabold">Abubakar </span>
             </div>
           </div>
         </div>
