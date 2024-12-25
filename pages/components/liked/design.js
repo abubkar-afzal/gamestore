@@ -1,44 +1,53 @@
 import React from "react";
 import Image from "next/image";
-import img from "../home/images/as2.jpg"
-import { FaCirclePlus,FaCircleMinus } from "react-icons/fa6";
+import img from "../home/images/as2.jpg";
+import { BiSolidPurchaseTag } from "react-icons/bi";
+import { TiShoppingCart } from "react-icons/ti";
+import { FaHeart } from "react-icons/fa6";
 
 const Design = () => {
   return (
     <>
-    <hr className="h-[1px] bg-black"/>
-        <div className="xsm:text-[2rem] xsm: m-2 text-center">LIKED</div>
-        <hr className="h-[1px] bg-black mb-4"/>
-      <div className="xsm:ml-4 xsm:w-[100vw] xsm:grid xsm:grid-cols-4 ">
-        <div>
-          <p>Game</p>
+      <div>
+        <div className="xsm:flex xsm:flex-row">
+          <div className="xsm:m-3 xsm:w-[400px] xsm:text-center  ">
+            <p className="xsm:text-[2rem]  xsm:font-bold ">LIKED GAMES</p>
+          </div>
         </div>
-        <div>
-          <p>1 month license</p>
-        </div>
-        <div>
-          <p>Adjust duration</p>
-        </div>
-        <div>
-          <p>Total</p>
-        </div>
-      </div>
-      <hr className="h-[1px] bg-black"/>
-      <div className="xsm:ml-4 xsm:mt-3 xsm:w-[100vw] xsm:grid xsm:grid-cols-4 xsm:items-center">
-        <div>
-          <Image src={img} width={50} height={50}/>
-          <p className="text-[2vw]">ASSASSINS Creed 2 brotherhood</p>
-        </div>
-        <div>
-          <p>$5.00</p>
-        </div>
-        <div className="xsm:flex xsm:space-x-1 xsm:mt-2">
-        <FaCirclePlus className="xsm:cursor-pointer"/>
-          <p className="-mt-1">1</p>
-        <FaCircleMinus className="xsm:cursor-pointer"/>
-        </div>
-        <div>
-          <p >$5.00</p>
+        <hr className="h-[1.5px] m-2 bg-[---c1]" />
+
+        <div className="xsm:flex xsm:flex-row">
+          <div className="xsm:m-3 xsm:w-[100px] xsm:flex xsm:flex-wrap xsm:flex-cols">
+            <Image
+              src={img}
+              width={300}
+              height={300}
+              className="xsm:w-[100px] h-[100px]"
+            />
+          </div>
+          <div className="xsm:w-[300px] xsm:flex xsm:flex-col   text-center xsm:place-content-center  ">
+            <div>
+              
+              <p className="xsm:text-[13px] xsm:font-semibold">
+                ASSASSINS CREED 2 Brotherhood
+              </p>
+              <p className="xsm:text-[12px] xsm:font-bold">Now in just $5.00</p>
+            </div>
+            <div className=" xsm:flex space-x-2 xsm:place-content-center xsm:items-center my-3 ">
+              <button className=" xsm:hover:bg-[---c7] xsm:active:bg-[---c6] xsm:items-center xsm:text-center xsm:flex xsm:text-[10px] xsm:h-[2rem] xsm:bg-[---c3]  xsm:rounded-[2rem] p-1 ">
+                <span className="text-[---c4] pl-3">Add to cart</span>
+                <TiShoppingCart className="text-[---c4] w-[0.8rem] h-[1rem] my-2" />
+              </button>
+              <button className=" xsm:hover:bg-[---c7] xsm:active:bg-[---c6] xsm:items-center xsm:text-center xsm:flex xsm:text-[10px] xsm:h-[2rem] xsm:bg-[---c3]  xsm:rounded-[2rem] p-1 ">
+                <span className="text-[---c4] pl-3">Buy Now</span>
+                <BiSolidPurchaseTag className="text-[---c4] w-[0.8rem] h-[1rem] my-2" />
+              </button>
+              <button className=" xsm:hover:bg-[---c7] xsm:active:bg-[---c6] xsm:items-center xsm:text-center xsm:flex xsm:text-[10px] xsm:h-[2rem] xsm:bg-[---c3]  xsm:rounded-[2rem] p-1 ">
+                <span className="text-[---c4] pl-3">Remove Liked</span>
+                <FaHeart className="text-[---c4] w-[0.8rem] h-[1rem] my-2" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
