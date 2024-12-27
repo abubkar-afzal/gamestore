@@ -6,41 +6,32 @@ import { FaCirclePlus,FaCircleMinus } from "react-icons/fa6";
 const Design = () => {
   return (
     <>
-    <hr className="h-[1px] bg-black"/>
-        <div className="xsm:text-[2rem] xsm: m-2 text-center">LOGIN</div>
-        <hr className="h-[1px] bg-black mb-4"/>
-      <div className="xsm:ml-4 xsm:w-[100vw] xsm:grid xsm:grid-cols-4 ">
-        <div>
-          <p>Game</p>
-        </div>
-        <div>
-          <p>1 month license</p>
-        </div>
-        <div>
-          <p>Adjust duration</p>
-        </div>
-        <div>
-          <p>Total</p>
-        </div>
+    <div className="place-items-center items-center align-middle">
+    <div className=" xsm:w-[70vw] rounded-[2rem] p-[20px]  xsm:bg-[---c4] xsm:place-content-start xsm:items-center place-items-center text-center align-middle">
+      <div>
+      <hr className="h-[1.5px] m-2 bg-[---c1]" />
+        
+        <h1 className=" font-bold xsm:rounded-[2rem] w-[6rem] p-2 pb-4">LOGIN</h1>
+        <hr className="h-[1.5px] m-2 bg-[---c1] mb-[20px]" />
+      
       </div>
-      <hr className="h-[1px] bg-black"/>
-      <div className="xsm:ml-4 xsm:mt-3 xsm:w-[100vw] xsm:grid xsm:grid-cols-4 xsm:items-center">
-        <div>
-          <Image src={img} width={50} height={50}/>
-          <p className="text-[2vw]">ASSASSINS Creed 2 brotherhood</p>
-        </div>
-        <div>
-          <p>$5.00</p>
-        </div>
-        <div className="xsm:flex xsm:space-x-1 xsm:mt-2">
-        <FaCirclePlus className="xsm:cursor-pointer"/>
-          <p className="-mt-1">1</p>
-        <FaCircleMinus className="xsm:cursor-pointer"/>
-        </div>
-        <div>
-          <p >$5.00</p>
-        </div>
+      <div className=" xsm:flex xsm:flex-col  text-left xsm:space-y-4">
+        <label htmlFor="email" className=" font-bold xsm:rounded-[2rem] w-[6rem]">Email:</label>
+        <input type="text"  htmlFor="email" placeholder="Enter your email" className="xsm:w-[10rem] xsm:h-[2.5rem] xsm:p-3 xsm:rounded-[2rem] border-[1px] border-[---c17]" />
+        
+        <label htmlFor="password" className=" font-bold xsm:rounded-[2rem] w-[6rem]">Password:</label>
+        <input type="password"  htmlFor="password" placeholder="Enter your password" className="xsm:w-[10rem] xsm:h-[2.5rem] xsm:p-3 xsm:rounded-[2rem] border-[1px] border-[---c17]"/>
+
+        <a><p className="xsm:text-[10px] xsm:text-[---c3] cursor-pointer xsm:hover:underline xsm:relative xsm:left-[5rem]">Forgot Password ?</p></a>
+
+        <button className="bg-[---c3] text-[---c4] p-2 mb-4 font-bold xsm:rounded-[2rem] w-[10rem] hover:bg-[---c6] active:bg-[---c7]">Login </button>
+        <button className="bg-[---c3] text-[---c4] p-2 mb-4 font-bold xsm:rounded-[2rem] w-[10rem] hover:bg-[---c6] active:bg-[---c7]">Sign Up </button>
+
       </div>
+
+    </div>
+    
+    </div>
     </>
   );
 };

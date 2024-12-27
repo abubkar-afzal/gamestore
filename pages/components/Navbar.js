@@ -11,9 +11,11 @@ import { IoWalletSharp } from "react-icons/io5";
 import Logo from "./logo";
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import { MdAccountCircle } from "react-icons/md";
 
 const Navbar = () => {
   const [show, hide] = useState(false);
+ 
   const onepress = () => {
     hide(!show);
   };
@@ -44,18 +46,20 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="xsm:flex xsm:fixed  xsm:z-10">
+      <div     className="xsm:flex xsm:fixed  xsm:z-10">
         <div className="py-2 pl-2 grid grid-cols-2 ">
           <div
-            onClick={onepress}
+            onClick={onepress} 
             className="xsm:h-[4em] xsm:w-[3rem] xsm:rounded-[2rem] xsm:cursor-pointer  "
           >
             <Logo />
             <span className="xsm:text-[15px] xsm:mt-[-7px]">Games</span>
           </div>
           <div
+          
+        
             className={
-              show
+              show  
                 ? "NAVBAR xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-0  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[92vh] xsm:w-auto  xsm:fixed xsm:duration-[2s] "
               : "xsm:bg-[---c10] xsm:grid xsm:grid-cols-1 xsm:left-[-7rem]  xsm:bottom-0  xsm:grid-rows-8 xsm:h-[92vh] xsm:w-auto  xsm:fixed xsm:duration-[2s]"
             }
@@ -91,8 +95,8 @@ const Navbar = () => {
             <div></div>
             <div></div>
             <Link href="http://localhost:3000/components/Login"><div className={` xsm:cursor-pointer xsm:hover:bg-[---c3] xsm:active:bg-[---c6] xsm:h-[40px] w-[7rem] xsm:items-center xsm:hover:text-[---c4] xsm:active:text-[---c4] xsm:font-extrabold  ${login}             xsm:rounded-[2rem]  xsm:flex xsm:space-x-1`}>
-              <BsFillPlusCircleFill className={`w-[2rem] xsm:active:bg-[---c6] h-[1.5rem] text-[---c2] xsm:active:text-[---c4] xsm:hover:text-[---c4] ${login}`} />
-              <p>Login</p>
+              <MdAccountCircle  className={`w-[2rem] xsm:active:bg-[---c6] h-[1.5rem] text-[---c2] xsm:active:text-[---c4] xsm:hover:text-[---c4] ${login}`} />
+              <p>Account</p>
             </div></Link>
 
             <div className=" xsm:cursor-pointer  xsm:h-[40px] w-[7rem] xsm:items-center   xsm:w-[30px] xsm:rounded-[2rem] my-2 xsm:flex ">
